@@ -6,6 +6,9 @@
 
 package flickr;
 
+import java.io.IOException;
+import javax.xml.stream.XMLStreamException;
+
 /**
  *
  * @author Vincent
@@ -14,9 +17,12 @@ public class Flickr {
 
     /**
      * @param args the command line arguments
+     * @throws java.io.IOException
+     * @throws javax.xml.stream.XMLStreamException
      */
-    public static void main(String[] args) {
-        Interface i = new Interface();
+    public static void main(String[] args) throws IOException, XMLStreamException {
+        //Interface i = new Interface();
+        PhotoFlickr p = new PhotoFlickr();
     }
     
 }
